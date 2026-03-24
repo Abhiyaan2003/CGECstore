@@ -4,12 +4,14 @@ import productModel from '../models/productModel.js'
 import Razorpay from 'razorpay'
 import crypto from 'crypto'
 
+/*
 // Initialize Razorpay
 const razorpayInstance = new Razorpay({
     key_id: process.env.RAZORPAY_KEY_ID,
     key_secret: process.env.RAZORPAY_KEY_SECRET
 })
 
+*/
 // Place order (COD) — kept as fallback
 const placeOrder = async (req, res) => {
     try {
