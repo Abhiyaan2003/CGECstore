@@ -20,8 +20,7 @@ app.use(cors({
   origin: [
     "http://localhost:5173",
     "https://cgec-store-in.vercel.app"
-  ],
-  credentials: true
+  ]
 }));
 
 // API routes
@@ -32,7 +31,7 @@ app.use('/api/cart', cartRouter)
 
 // Root route
 app.get('/', (req, res) => {
-    res.send('CGEC Wearables API is running')
+  res.send('CGEC Wearables API is running')
 })
 
 app.listen(port, () => console.log(`Server started on PORT: ${port}`))
